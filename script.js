@@ -32,6 +32,12 @@ const tabViewUpdate = (element, filterType, filterValue) => {
 }
 
 const changeElementDisplay = (element, displayValue) => {
+    if (displayValue == 'none') {
+        element.parentNode.style.borderBottom = 'none'
+    }
+    else {
+        element.parentNode.style.borderBottom = 'solid 1px silver';
+    }
     element.style.display = displayValue;
     element.previousSibling.style.display = displayValue;
 }

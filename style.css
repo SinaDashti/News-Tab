@@ -74,6 +74,10 @@ body {
 .content-select {
   border: solid 1px silver;
   border-top: none;
+  border-bottom: none;
+  /* height: 70vh;
+  overflow-y: scroll; 
+  overflow-x:hidden;  */
 }
 
 input:hover {
@@ -95,7 +99,9 @@ input:hover {
 
 p {
   display: grid;
-  grid-template-columns: 22px 280px;
+  grid-template-columns: 22px 270px;
+  border-bottom: solid 1px silver;
+  word-break: break-word;
 }
 
 a {
@@ -115,4 +121,20 @@ i {
   display: grid;
   justify-content: center;
   margin-left: 4px;
+}
+
+.fa-comment {
+  color: #00828b;
+}
+
+.fa-eye {
+  color: green;
+}
+
+.fa-hotjar {
+  color: red;
+}
+
+.fa-video {
+  color: #ff7f50;
 }
